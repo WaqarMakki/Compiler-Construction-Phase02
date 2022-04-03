@@ -1,0 +1,2 @@
+24
+int	float	identifier	number	for 	while	if 	else	,	<	>	:	{	}	==	!=	=>	<>	=<	+	-	*	/	$

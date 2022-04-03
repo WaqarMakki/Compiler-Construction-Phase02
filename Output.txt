@@ -1,0 +1,155 @@
+int
+$ Function 
+$ CompoundStmt > ArgList < identifier Type 
+$ CompoundStmt > ArgList < identifier int 
+								 Matched...
+
+identifier
+$ CompoundStmt > ArgList < identifier 
+								 Matched...
+
+<
+$ CompoundStmt > ArgList < 
+								 Matched...
+
+int
+$ CompoundStmt > ArgList 
+$ CompoundStmt > ArgList' Arg 
+$ CompoundStmt > ArgList' identifier Type 
+$ CompoundStmt > ArgList' identifier int 
+								 Matched...
+
+identifier
+$ CompoundStmt > ArgList' identifier 
+								 Matched...
+
+>
+$ CompoundStmt > ArgList' 
+$ CompoundStmt > NULL 
+								 Matched...
+
+{
+$ CompoundStmt 
+$ } StmtList { 
+								 Matched...
+
+float
+$ } StmtList 
+$ } StmtList' 
+$ } StmtList' Stmt 
+$ } StmtList' Declaration 
+$ } StmtList' : IdentList Type 
+$ } StmtList' : IdentList float 
+								 Matched...
+
+identifier
+$ } StmtList' : IdentList 
+$ } StmtList' : IdentList' identifier 
+								 Matched...
+
+:
+$ } StmtList' : IdentList' 
+$ } StmtList' : NULL 
+								 Matched...
+
+identifier
+$ } StmtList' 
+$ } StmtList' Stmt 
+$ } StmtList' : Expr 
+$ } StmtList' : Rvalue 
+$ } StmtList' : Rvalue' Mag 
+$ } StmtList' : Rvalue' Term' Factor 
+$ } StmtList' : Rvalue' Term' identifier 
+								 Matched...
+
+<>
+$ } StmtList' : Rvalue' Term' 
+$ } StmtList' : Rvalue' NULL 
+$ } StmtList' : Rvalue' Mag Compare 
+$ } StmtList' : Rvalue' Mag <> 
+								 Matched...
+
+number
+$ } StmtList' : Rvalue' Mag 
+$ } StmtList' : Rvalue' Term' Factor 
+$ } StmtList' : Rvalue' Term' number 
+								 Matched...
+
+:
+$ } StmtList' : Rvalue' Term' 
+$ } StmtList' : Rvalue' NULL 
+$ } StmtList' : NULL 
+								 Matched...
+
+for
+$ } StmtList' 
+$ } StmtList' Stmt 
+$ } StmtList' ForStmt 
+$ } StmtList' Stmt > OptExpr : OptExpr : Expr < for 
+								 Matched...
+
+<
+$ } StmtList' Stmt > OptExpr : OptExpr : Expr < 
+								 Matched...
+
+identifier
+$ } StmtList' Stmt > OptExpr : OptExpr : Expr 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Mag 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Term' Factor 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Term' identifier 
+								 Matched...
+
+=<
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Term' 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' NULL 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Mag Compare 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Mag =< 
+								 Matched...
+
+number
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Mag 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Term' Factor 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Term' number 
+								 Matched...
+
+:
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' Term' 
+$ } StmtList' Stmt > OptExpr : OptExpr : Rvalue' NULL 
+$ } StmtList' Stmt > OptExpr : OptExpr : NULL 
+								 Matched...
+
+:
+$ } StmtList' Stmt > OptExpr : OptExpr 
+$ } StmtList' Stmt > OptExpr : NULL 
+								 Matched...
+
+>
+$ } StmtList' Stmt > OptExpr 
+$ } StmtList' Stmt > NULL 
+								 Matched...
+
+:
+$ } StmtList' Stmt 
+$ } StmtList' : 
+								 Matched...
+
+{
+$ } StmtList' 
+$ } StmtList' Stmt 
+$ } StmtList' CompoundStmt 
+$ } StmtList' } StmtList { 
+								 Matched...
+
+}
+$ } StmtList' } StmtList 
+$ } StmtList' } StmtList' 
+$ } StmtList' } NULL 
+								 Matched...
+
+}
+$ } StmtList' 
+$ } NULL 
+								 Matched...
+
+$ 

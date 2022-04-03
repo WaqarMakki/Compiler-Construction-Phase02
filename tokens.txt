@@ -1,0 +1,26 @@
+<int, keyword >
+< main_, identifier >
+< <, < >
+<int, keyword >
+< var1_, identifier >
+< >, >  >
+< {, { >
+<float, keyword >
+< var1_, identifier >
+< :, : >
+< var_a, identifier >
+< <>, <> >
+< 10, number >
+< :, : >
+<for, keyword >
+< <, < >
+< a_, identifier >
+< =<, =< >
+< 10., >  >
+< 5, number >
+< ::, :: >
+< >, >  >
+< :, : >
+< {, { >
+< }, } >
+< }, } >
